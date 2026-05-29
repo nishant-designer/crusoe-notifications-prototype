@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Crusoe Cloud</title>
+		<script>
+			// SPA shim for GitHub Pages: GH Pages serves 404.html for any
+			// deep URL that doesn't map to a real file. We stash the requested
+			// path into sessionStorage and redirect to /, where the app reads
+			// it back and replaces history before mounting routes.
+			;(function () {
+				var l = window.location
+				try {
+					sessionStorage.setItem('gh-spa-redirect', l.pathname + l.search + l.hash)
+				} catch (e) {}
+				// segments[1] is the repo segment, e.g. /crusoe-notifications-prototype/...
+				var base = '/'
+				var segs = l.pathname.split('/')
+				if (segs.length > 1 && segs[1]) base = '/' + segs[1] + '/'
+				l.replace(l.origin + base)
+			})()
+		</script>
+	</head>
+	<body></body>
+</html>

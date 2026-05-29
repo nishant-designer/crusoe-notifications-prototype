@@ -1,0 +1,5 @@
+Contact: mailto:security@crusoe.ai
+Expires: 2026-07-01T21:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.crusoe.ai/.well-known/security.txt
+Hiring: https://www.crusoe.ai/about/careers

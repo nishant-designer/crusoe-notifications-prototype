@@ -1,0 +1,2 @@
+import{R as e}from"./vendor-50e3c8be.js";const u=e.createContext(!0);function r(){throw new Error("A function wrapped in useEffectEvent can't be called during rendering.")}const s="use"in e?()=>{try{return e.use(u)}catch{return!1}}:()=>!1;function f(n){const t=e.useRef(r);return e.useInsertionEffect(()=>{t.current=n},[n]),(...c)=>{s()&&r();const o=t.current;return o(...c)}}export{f as u};
+//# sourceMappingURL=use-effect-event-9f295d4f.js.map

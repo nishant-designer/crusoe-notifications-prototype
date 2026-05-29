@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /$
+Allow: /password
+Allow: /request
+Disallow: /*
